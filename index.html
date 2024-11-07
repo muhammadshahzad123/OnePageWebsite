@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery Shop</title>
+    <style>
+    /* Page setup */
+        body, h1, h2, h3, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
+        }
+
+        /* Navbar styling */
+        nav {
+            background-color: black;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        /* Home Section */
+        .home {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: yellow;
+        }
+
+        .home h1 {
+            font-size: 50px;
+        }
+
+        /* Product Card Styling */
+        .product-card-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .product-card {
+            border: 2px solid black;
+            border-radius: 8px;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+
+        .product-card img {
+            width: 100%;         /* Makes the image span the full width of the card */
+            height: 150px;       /* Fixed height for uniformity */
+            object-fit: cover;   /* Ensures the image covers the area without distortion */
+            border-radius: 8px;  /* Round corners to match the card */
+            margin-bottom: 15px; /* Adds space between the image and product name */
+        }
+
+        .product-card h3 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .product-card p {
+            color: #555;
+        }
+
+        .product-card button {
+            background-color: yellow;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            color: black;
+        }
+
+        .product-card button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        /* About Us Section */
+        .about-us {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .about-us h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .about-us p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #f4f4f4;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            color: #555;
+            font-size: 18px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="home">
+        <h1>Welcome to Our Bakery!</h1>
+        <p>Freshly baked goods made with love</p>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="product-card-container">
+        <div class="product-card">
+            <img src="choclateCake.jpg" alt="Chocolate Cake">
+            <h3>Chocolate Cake</h3>
+            <p>Delicious and moist chocolate cake topped with rich frosting.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="product-card">
+            <img src="butterCroisant.jpg" alt="Butter Croissant">
+            <h3>Butter Croissant</h3>
+            <p>Flaky and buttery croissants baked to perfection with yummy taste.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="product-card">
+            <img src="vanillaCupcake.jpg" alt="Vanilla Cupcake">
+            <h3>Vanilla Cupcake</h3>
+            <p>Light and fluffy vanilla cupcakes with sweet frosting.</p>
+            <button>Order Now</button>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-us">
+        <h2>About Us</h2>
+        <p>We are a small family-owned bakery, baking the finest treats since 2005. Our mission is to provide delicious, fresh-baked goods to brighten your day.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>We would love to hear from you! Feel free to reach out to us through the following methods:</p>
+        <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+        <p><strong>Email:</strong> contact@bakeryshop.com</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <p>&copy; 2024 Bakery Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
